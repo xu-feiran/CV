@@ -31,6 +31,7 @@ def train(net_name):
             optimizer.step()
             barRun(i, total, loss.item())
         barEnd()
+    print('Finished Training!')
     if save_model:
         # TODO NetName_DatasetName_Epoch
         torch.save(model.state_dict(), 
@@ -39,4 +40,4 @@ def train(net_name):
     return model
 
 if __name__ == '__main__':
-    train('LeNet-5')
+    train('LeNet')

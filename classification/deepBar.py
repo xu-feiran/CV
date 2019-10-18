@@ -6,4 +6,4 @@ def barRun(current, total, show_num, title='loss'):
     print('\r{0}{1}{2}'.format('▉ '*squ_num, title+': ', show_num), end='')
 
 def barEnd():
-    print('Finished Training!')
+    print('')
