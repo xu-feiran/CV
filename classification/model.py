@@ -31,6 +31,19 @@ class LeNet(nn.Module):
         return x
 
 
+class AlexNet(nn,Module):
+    r"""AlexNet model.
+
+    Reference:
+        ImageNet Classification with Deep Convolutional Neural Networks 
+    """
+    def __init__(self):
+        super(AlexNet, self).__init__()
+
+    def forward(self, x):
+
+        return x
+
 if __name__ == '__main__':
     net = LeNet()
     print(net)
